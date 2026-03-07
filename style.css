@@ -1,0 +1,204 @@
+@keyframes floatUp {
+  0% {
+    transform: translateY(0);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-110vh);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fdf6ee;
+  font-family: "Lato", sans-serif;
+  color: #2a1a1f;
+  overflow-x: hidden;
+  min-height: 100vh;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.birthday-box {
+  opacity: 0;
+  animation: fadeUp 1s ease forwards 0.5s;
+}
+
+.wish-card {
+  opacity: 0;
+  animation: fadeUp 1s ease forwards 0.8s;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+}
+
+#day {
+  background-color: #e8567a;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  width: 200px;
+  border-radius: 30px;
+  padding: 20px 10px;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+.date h1 {
+  font-family: "Playfair Display", serif;
+  line-height: 1.05;
+  font-size: clamp(2.8rem, 8vw, 5.5rem);
+  color: #2a1a1f;
+  text-align: center;
+}
+.date span {
+  color: #e8567a;
+  font-style: italic;
+  text-align: center;
+}
+#count-info {
+  color: #d4a853;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+.timing {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 20px;
+}
+.days,
+.hours,
+.minutes,
+.seconds {
+  background: white;
+  min-width: 80px;
+  text-align: center;
+  padding: 16px 20px 12px;
+  border-radius: 12px;
+  box-shadow: 0 40px 16px rgba(212, 168, 83, 0.15);
+}
+.days h2,
+.hours h2,
+.minutes h2,
+.seconds h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  color: #d4a853;
+}
+.days h2 span,
+.hours h2 span,
+.minutes h2 span,
+.seconds h2 span{
+  display: block;
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  color: #a07040;
+  margin-top: 4px;
+  font-family: "Lato", sans-serif;
+}
+.birthday-box{
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(232, 86, 122, 0.12);
+  margin-top: 40px;
+}
+#emogi-row{
+display: flex;
+letter-spacing: 0.8rem;
+font-size: 2rem;
+}
+.appreciation, .wishes, .quote{
+  font-size: 1.5rem;
+  line-height: 1.85;
+  font-weight: 300;
+  color: #5a3a45;
+}
+.divider{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.line-left, .line-right{
+  flex: 1;
+  height: 1px;
+  background-color: #e8567a;
+}
+.appreciation{
+  margin-bottom: 20px;
+}
+.wishes{
+  margin-bottom: 20px;
+}
+.quote{
+  margin-top: 10px;
+}
+.wish-grid{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 32px;
+  text-align: center;
+}
+.wish-card{
+  background: white;
+  border-radius: 16px;
+  padding: 24px 20px;
+  box-shadow: 0 4px 20px rgba(232, 86, 122, 0.08);
+}
+.wish-card span{
+  font-size: 2rem;
+}
+.wish-card p{
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #7a4a58;
+  font-weight: 300;
+  margin-top: 8px;
+}
+.footer{
+  text-align: center;
+  margin-top: 30px;
+}
+.footer h2{
+color: #e8567a;
+font-size: 1.2rem;
+font-family: "Playfair Display", serif;
+}
+.footer h1{
+  font-size: 2.5rem;
+  color: #e8567a;
+}
+.wish-card, .days, .hours, .minutes, .seconds, .birthday-box{
+  transition: background-color 0.3s ease;
+}
+.wish-card:hover, .days:hover, .hours:hover, .minutes:hover, .seconds:hover, .birthday-box:hover{
+  background-color: #e8567a;
+}
