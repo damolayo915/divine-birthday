@@ -25,16 +25,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-color: #fdf6ee;
   font-family: "Lato", sans-serif;
   color: #2a1a1f;
   overflow-x: hidden;
   min-height: 100vh;
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 40px 20px;
 }
+
 .container {
   max-width: 700px;
   margin: 0 auto;
@@ -85,6 +84,12 @@ h1 {
   font-size: 18px;
   letter-spacing: 2px;
 }
+
+.The-count {
+  margin-top: 40px;
+  text-align: center;
+}
+
 .timing {
   display: flex;
   gap: 12px;
@@ -100,7 +105,7 @@ h1 {
   text-align: center;
   padding: 16px 20px 12px;
   border-radius: 12px;
-  box-shadow: 0 40px 16px rgba(212, 168, 83, 0.15);
+  box-shadow: 0 4px 16px rgba(212, 168, 83, 0.15);
 }
 .days h2,
 .hours h2,
@@ -113,7 +118,7 @@ h1 {
 .days h2 span,
 .hours h2 span,
 .minutes h2 span,
-.seconds h2 span{
+.seconds h2 span {
   display: block;
   font-size: 0.65rem;
   letter-spacing: 0.15em;
@@ -121,7 +126,7 @@ h1 {
   margin-top: 4px;
   font-family: "Lato", sans-serif;
 }
-.birthday-box{
+.birthday-box {
   max-width: 600px;
   margin: 0 auto;
   padding: 40px;
@@ -130,75 +135,117 @@ h1 {
   box-shadow: 0 20px 60px rgba(232, 86, 122, 0.12);
   margin-top: 40px;
 }
-#emogi-row{
-display: flex;
-letter-spacing: 0.8rem;
-font-size: 2rem;
+#emogi-row {
+  display: flex;
+  letter-spacing: 0.8rem;
+  font-size: 2rem;
 }
-.appreciation, .wishes, .quote{
-  font-size: 1.5rem;
+.appreciation,
+.wishes,
+.quote {
+  font-size: 1.05rem;
   line-height: 1.85;
   font-weight: 300;
   color: #5a3a45;
 }
-.divider{
+.divider {
   display: flex;
   align-items: center;
   gap: 8px;
 }
-.line-left, .line-right{
+.line-left,
+.line-right {
   flex: 1;
   height: 1px;
   background-color: #e8567a;
 }
-.appreciation{
+.appreciation {
   margin-bottom: 20px;
 }
-.wishes{
+.wishes {
   margin-bottom: 20px;
 }
-.quote{
+.quote {
   margin-top: 10px;
 }
-.wish-grid{
+.wish-grid {
   display: flex;
   flex-direction: column;
   gap: 16px;
   margin-top: 32px;
   text-align: center;
 }
-.wish-card{
+.wish-card {
   background: white;
   border-radius: 16px;
   padding: 24px 20px;
   box-shadow: 0 4px 20px rgba(232, 86, 122, 0.08);
 }
-.wish-card span{
+.wish-card span {
   font-size: 2rem;
 }
-.wish-card p{
+.wish-card p {
   font-size: 0.95rem;
   line-height: 1.6;
   color: #7a4a58;
   font-weight: 300;
   margin-top: 8px;
 }
-.footer{
+.footer {
   text-align: center;
   margin-top: 30px;
 }
-.footer h2{
-color: #e8567a;
-font-size: 1.2rem;
-font-family: "Playfair Display", serif;
+.footer h2 {
+  color: #e8567a;
+  font-size: 1.2rem;
+  font-family: "Playfair Display", serif;
 }
-.footer h1{
+.footer h1 {
   font-size: 2.5rem;
   color: #e8567a;
 }
-.wish-card, .days, .hours, .minutes, .seconds, .birthday-box{
+.wish-card,
+.days,
+.hours,
+.minutes,
+.seconds,
+.birthday-box {
   transition: background-color 0.3s ease;
 }
-.wish-card:hover, .days:hover, .hours:hover, .minutes:hover, .seconds:hover, .birthday-box:hover{
+.wish-card:hover,
+.days:hover,
+.hours:hover,
+.minutes:hover,
+.seconds:hover,
+.birthday-box:hover {
   background-color: #e8567a;
+}
+.media-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.media-item video {
+  width: 100%;
+  border-radius: 12px;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px 16px;
+  }
+  .date h1 {
+    font-size: 2rem;
+  }
+  .birthday-box {
+    padding: 24px 16px;
+  }
+  .days,
+  .hours,
+  .minutes,
+  .seconds {
+    min-width: 70px;
+    padding: 12px 8px;
+  }
 }
