@@ -241,11 +241,31 @@ h1 {
   .birthday-box {
     padding: 24px 16px;
   }
+  .timing {
+    gap: 6px;
+  }
   .days,
   .hours,
   .minutes,
   .seconds {
-    min-width: 70px;
-    padding: 12px 8px;
+    min-width: 55px;
+    padding: 8px 4px;
+  }
+  .days h2,
+  .hours h2,
+  .minutes h2,
+  .seconds h2 {
+    font-size: 1.2rem;
+  }
+  .days h2 span,
+  .hours h2 span,
+  .minutes h2 span,
+  .seconds h2 span {
+    font-size: 0.55rem;
+  }
+  .appreciation,
+  .wishes,
+  .quote {
+    font-size: 1rem;
   }
 }
