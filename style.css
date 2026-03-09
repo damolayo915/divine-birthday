@@ -261,6 +261,7 @@ h1 {
   .hours h2 span,
   .minutes h2 span,
   .seconds h2 span {
+    display: block;
     font-size: 0.55rem;
   }
   .appreciation,
