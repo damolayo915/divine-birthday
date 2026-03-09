@@ -125,3 +125,14 @@ document.getElementById("pass-btn").addEventListener("click", function() {
     document.getElementById("pass-error").style.display = "block";
   }
 });
+
+const tapElements = document.querySelectorAll('.wish-card, .days, .hours, .minutes, .seconds, .birthday-box');
+
+tapElements.forEach(el => {
+  el.addEventListener('touchstart', function() {
+    this.style.backgroundColor = '#e8567a';
+  });
+  el.addEventListener('touchend', function() {
+    this.style.backgroundColor = 'white';
+  });
+});
